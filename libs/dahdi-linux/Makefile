@@ -8,6 +8,8 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
+KERNEL_MAKE_FLAGS += KCFLAGS=-Wno-error
+
 PKG_NAME:=dahdi-linux
 PKG_VERSION:=3.1.0
 PKG_RELEASE:=5
